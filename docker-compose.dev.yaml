@@ -1,0 +1,7 @@
+services:
+  beertracker:
+    command: ./manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/opt/beertracker
+    environment:
+      - DEBUG=true

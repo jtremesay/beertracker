@@ -16,6 +16,10 @@ serve: build-image
 	$(DOCKER) compose up --remove-orphans
 
 
+serve-debug: build-image
+	$(DOCKER) compose -f docker-compose.yaml -f docker-compose.dev.yaml up --remove-orphans 
+
+
 
 # Display an help
 help:
@@ -26,6 +30,7 @@ help:
 	@echo "    build-image            build the docker image"
 	@echo "    help                   display the help"
 	@echo "    serve                  run with docker compose"
+	@echo "    serve-debug            run with docker compose in debug mode + autoreload"
 
 
 
