@@ -1,0 +1,8 @@
+-f requirements.txt
+
+# Not needed by the project, just for my comfort
+black
+flake8
+pylint
+ipython
+rope
