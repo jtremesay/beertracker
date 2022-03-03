@@ -23,6 +23,7 @@ Some of the stuff used:
 * [postgresql](https://www.postgresql.org/): The World's Most Advanced Open Source Relational Database
 * [psycopg2](https://www.psycopg.org/): a postgresql for python
 * [python](https://www.python.org/): one of the best programming language ever created
+* [ssh](http://www.openssh.com/): a remote secure shell
 * [venv](https://docs.python.org/3/library/venv.html): virtual env for python. Python packaging is messy :-/
 * [whitenoise](http://whitenoise.evans.io/en/stable/): a library for serving static files from django web apps. 
 
