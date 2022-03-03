@@ -14,4 +14,4 @@ COPY proj proj
 COPY beertracker beertracker
 
 # Run the debug web server
-CMD ./manage.py runserver 0.0.0.0:8000
+CMD gunicorn -b 0.0.0.0:8000 -k gevent proj.wsgi
