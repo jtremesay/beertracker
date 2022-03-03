@@ -13,5 +13,8 @@ COPY manage.py manage.py
 COPY proj proj
 COPY beertracker beertracker
 
+# Collect the static files
+RUN ./manage.py collectstatic --no-input
+
 # Run the debug web server
 CMD gunicorn -b 0.0.0.0:8000 -k gevent proj.wsgi
