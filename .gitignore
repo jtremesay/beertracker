@@ -1,2 +1,8 @@
 # Ignore python venv
 /venv/
+
+# Ignore python compiled files
+*.pyc
+
+# Ignore sqlite databases
+*.sqlite3
