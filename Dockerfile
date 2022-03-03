@@ -7,6 +7,8 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Install the project
-COPY manage.py ./
-COPY proj ./
-COPY beertracker ./
+# Try to add the most frequently updated files lowers than the
+# unfrequently ones. This increase the cache efficiency. 
+COPY manage.py manage.py
+COPY proj proj
+COPY beertracker beertracker
